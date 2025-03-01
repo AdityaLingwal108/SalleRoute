@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUP6 - Campus Navigation</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">GROUP6</div>
+        <nav class="nav">
+            <a href="map.html" class="nav-link">Map</a>
+            <a href="about.html" class="nav-link">About Us</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="search-container">
+            <h1 class="title">Hi, where do you want to go today?</h1>
+            
+            <div class="search-controls">
+                <div class="select-wrapper">
+                    <select id="building-select" class="form-select">
+                        <option value="" disabled selected>Select a building</option>
+                        <option value="hall">Hall</option>
+                        <option value="library">Library</option>
+                    </select>
+                </div>
+                
+                <div class="select-wrapper">
+                    <select id="floor-select" class="form-select" disabled>
+                        <option value="" disabled selected>Select a floor</option>
+                        <!-- Options will be populated via JavaScript -->
+                    </select>
+                </div>
+                
+                <div class="select-wrapper">
+                    <select id="room-select" class="form-select" disabled>
+                        <option value="" disabled selected>Select a room</option>
+                        <!-- Options will be populated via JavaScript -->
+                    </select>
+                </div>
+                
+                <button id="search-btn" class="btn btn-search" disabled>Search</button>
+            </div>
+        </div>
+        
+        <div id="map-container" class="map-container">
+            <!-- Map will be loaded here -->
+        </div>
+    </main>
+
+    <script src="/JAVASCRIPT/script.jsx"></script>
+</body>
+</html>
